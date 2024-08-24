@@ -137,7 +137,7 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -168,6 +168,10 @@ section.secondary {
   margin: 30px 0;
 }
 
+.card-header.grid {
+  grid-gap: 0;
+}
+
 .card-body {
   padding: 30px;
 }
@@ -176,13 +180,17 @@ section.secondary {
   padding: 10px;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
 .grid-3-columns-expand {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
 .image {
-  max-width: 100%;
-
+  width: 100%;
   display: block;
 }
 
@@ -378,5 +386,13 @@ footer a {
 
   section h3 {
     line-height: 1.2;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
